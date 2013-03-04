@@ -3,4 +3,4 @@
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
 # nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_INTERNAL_IP $OPENSHIFT_REPO_DIR/diy > $OPENSHIFT_HOMEDIR/diy-0.1/logs/server.log 2>&1 &
-nohup bundle exec rackup $OPENSHIFT_REPO_DIR/config.ru -s thin -E production > $OPENSHIFT_HOMEDIR/diy-0.1/logs/server.log 2>&1 &
+nohup bundle exec rackup $OPENSHIFT_REPO_DIR/config.ru -s thin -E production -p $OPENSHIFT_INTERNAL_PORT > $OPENSHIFT_HOMEDIR/diy-0.1/logs/server.log 2>&1 &
