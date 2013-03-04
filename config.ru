@@ -6,5 +6,5 @@ map '/lobster' do
 end
 
 Faye::WebSocket.load_adapter('thin')
-app = Faye::RackAdapter.new(:mount => '/', :timeout => 45)
+app = Faye::RackAdapter.new(:mount => '/faye', :timeout => 45)
 run app
