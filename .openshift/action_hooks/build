@@ -1,9 +1,0 @@
-#!/bin/bash
-# This is a simple build script and will be executed on your CI system if 
-# available.  Otherwise it will execute while your application is stopped
-# before the deploy step.  This script gets executed directly, so it
-# could be python, php, ruby, etc.
-source $OPENSHIFT_DATA_DIR/.rvm/scripts/rvm
-rvm use 1.9.3
-cd $OPENSHIFT_REPO_DIR
-nohup bundle install > $OPENSHIFT_HOMEDIR/diy-0.1/logs/server.log 2>&1 &

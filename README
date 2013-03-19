@@ -1,3 +1,1 @@
-# Faye on DIY Openshift
-
-This is one of the infrastructure components of Zephyr (some Faye server up and running on the cloud.) We're treating it as a lightweight push server at the moment though there's other interesting ways we might be able to leverage it.
+for my apps
